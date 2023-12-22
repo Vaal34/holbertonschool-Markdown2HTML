@@ -1,6 +1,19 @@
 #!/usr/bin/python3
 """
-comment
+markdown2html.py - Convert Markdown to HTML
+
+This script takes a Markdown file as input and generates an HTML file as output.
+
+Usage:
+  ./markdown2html.py [input_file] [output_file]
+
+Parameters:
+  input_file (str): The path to the Markdown file to be converted.
+  output_file (str): The path to the HTML file where the converted output will be saved.
+
+Example:
+  ./markdown2html.py README.md README.html
+
 """
 
 
