@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+comment
+"""
+
 
 import sys
 import os.path
@@ -6,9 +10,13 @@ import os.path
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
+
 def create_markdown():
+    """ focntion that check if an error exist if not print nothing """
+
     if len(sys.argv) < 2:
-        print("Usage: ./markdown2html.py README.md README.html", file=sys.stderr)
+        error = "Usage: ./markdown2html.py README.md README.html"
+        print(error, file=sys.stderr)
         exit(1)
 
     if not os.path.isfile(sys.argv[1]):
@@ -17,5 +25,6 @@ def create_markdown():
 
     print()
     exit(0)
+
 
 create_markdown()
