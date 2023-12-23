@@ -1,25 +1,16 @@
 #!/usr/bin/python3
-'''
-markdown2html.py - Convert Markdown to HTML
-
-This script takes a Markdown file as input and generates an HTML file as output
-
-Usage:
-  ./markdown2html.py [input_file] [output_file]
+'''Write a script markdown2html.py that takes an argument 2 strings:
+   First argument is the name of the Markdown file.
+   Second argument is the output file name
 '''
 
 import sys
 import os.path
 
-if __name__ == "__main__":
-        # Assign command line arguments to variables
-        input_file = sys.argv[1]
-        output_file = sys.argv[2]
+if __name__ == '__main__':
 
-        def create_markdown():
-        """
-        Function that checks if an error exists, if not print nothing.
-        """
+    def create_markdown():
+        """ Function that checks if an error exists, if not print nothing."""
 
         if len(sys.argv) < 2:
             error = "Usage: ./markdown2html.py README.md README.html"
@@ -27,10 +18,10 @@ if __name__ == "__main__":
             exit(1)
 
         if not os.path.isfile(sys.argv[1]):
-            print(f"Missing {input_file}")
+            print(f"Missing {sys.argv[1]}")
             exit(1)
 
         print()
         exit(0)
 
-        create_markdown()
+    create_markdown()
