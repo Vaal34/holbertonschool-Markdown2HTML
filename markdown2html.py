@@ -6,6 +6,7 @@
 
 import sys
 import os.path
+import markdown
 
 if __name__ == '__main__':
 
@@ -20,6 +21,13 @@ if __name__ == '__main__':
         if not os.path.isfile(sys.argv[1]):
             print(f"Missing {sys.argv[1]}", file=sys.stderr)
             exit(1)
+
+        with open(sys.argv[1], 'r') as f:
+            text = f.read()
+            html = markdown.markdown(text)
+
+        with open(sys.argv[2], 'w') as nf:
+            nf.write(html)
 
         exit(0)
 
