@@ -13,11 +13,13 @@ if __name__ == '__main__':
     def create_markdown():
         """ Function that checks if an error exists, if not print nothing."""
 
+        # Check if the script is correctly launch
         if len(sys.argv) < 3:
             error = "Usage: ./markdown2html.py README.md README.html"
             print(error, file=sys.stderr)
             exit(1)
 
+        # Check if first arg exist
         if not os.path.isfile(sys.argv[1]):
             print(f"Missing {sys.argv[1]}", file=sys.stderr)
             exit(1)
