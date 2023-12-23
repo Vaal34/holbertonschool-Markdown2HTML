@@ -24,17 +24,6 @@ if __name__ == "__main__":
 
             for line in lines:
                 line = line.rstrip('\r\n')
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -34,21 +35,37 @@
-  
                 if line.startswith('#'):
                     # Convert Markdown heading to HTML heading
                     count_hashes = min(line.count('#'), 6)
