@@ -34,4 +34,5 @@ def create_markdown():
     exit(0)
 
 
-create_markdown()
+if __name__ == "__main__":
+    create_markdown()
