@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-'''Write a script markdown2html.py that takes an argument 2 strings:
-   First argument is the name of the Markdown file.
-   Second argument is the output file name
-'''
+""" This file is made to parse some Markdown to HTML """
+
 
 import sys
 import os.path
