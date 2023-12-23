@@ -1,25 +1,42 @@
 #!/usr/bin/python3
-""" This file is made to parse some Markdown to HTML """
+'''Write a script markdown2html.py that takes an argument 2 strings:
+   First argument is the name of the Markdown file.
+   Second argument is the output file name
+'''
 
 import sys
+import os.path
+import markdown
 
 
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: ./markdown2html.py README.md README.html", file=sys.stderr)
-        exit(1)
-    try:
-        file = open(sys.argv[1], "r")
-        html = open(sys.argv[2], "w")
-        for line in file:
-            for (idx, char) in enumerate(line):
-                if char == " " and line[idx-1] == "#":
-                    print(f"<h{idx}>{line[idx:-1]}</h{idx}>", file=html)
+    """
+    Convert a Markdown file to HTML and save the result in another file.
 
-        exit(0)
-    except FileNotFoundError:
+    This script takes two command line arguments:
+    1. The name of the input Markdown file.
+    2. The name of the output HTML file.
+
+    Example:
+    ./markdown2html.py input.md output.html
+    """
+    if len(sys.argv) < 3:
+        error = "Usage: ./markdown2html.py README.md README.html"
+        print(error, file=sys.stderr)
+        exit(1)
+
+    if not os.path.isfile(sys.argv[1]):
         print(f"Missing {sys.argv[1]}", file=sys.stderr)
         exit(1)
+
+    with open(sys.argv[1], 'r') as f:
+        text = f.read()
+        html = markdown.markdown(text)
+
+    with open(sys.argv[2], 'w') as nf:
+        nf.write(html)
+
+    exit(0)
 
 
 if __name__ == "__main__":
