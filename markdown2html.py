@@ -6,10 +6,18 @@ import sys  # Import the sys module for command line arguments
 import os.path  # Import the os.path module for file existence checking
 import markdown  # Import the markdown module for Markdown to HTML conversion
 
+"""
+Test comment
+Test comment
+Test comment
+"""
+
 # Define the main function
 def main():
-    """ Function that checks if an error exists,
-    if not print nothing. Comment
+    """
+    Test comment
+    Test comment
+    Test comment
     """
 
     # Check if the correct number of command line arguments is provided
