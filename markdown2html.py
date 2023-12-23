@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """ This file is made to parse some Markdown to HTML """
 
-import sys
-import os.path
-import markdown
+# Import necessary modules
+import sys  # Import the sys module for command line arguments
+import os.path  # Import the os.path module for file existence checking
+import markdown  # Import the markdown module for Markdown to HTML conversion
 
-
-# Function to convert Markdown to HTML and save to a file
+# Define the main function
 def main():
     """ Function that checks if an error exists,
     if not print nothing. Comment
@@ -33,7 +33,6 @@ def main():
         nf.write(html)
 
     exit(0)
-
 
 # Run the main function if the script is executed directly
 if __name__ == "__main__":
