@@ -21,7 +21,6 @@ if __name__ == '__main__':
             print(f"Missing {sys.argv[1]}", file=sys.stderr)
             exit(1)
 
-        print()
         exit(0)
 
     create_markdown()
