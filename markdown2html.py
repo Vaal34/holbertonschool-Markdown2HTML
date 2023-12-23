@@ -28,6 +28,10 @@ if __name__ == "__main__":
                     # Convert Markdown heading to HTML heading
                     count_hashes = min(line.count('#'), 6)
                     write_file.write("<h{0}>{1}</h{0}>\n".format(count_hashes, line.lstrip('#').strip()))
+                    # Close the paragraph if it was open
+                    if in_paragraph:
+                        in_paragraph = False
+                        write_file.write("</p>\n")
                 elif line.startswith('- '):
                     # Handle unordered list items
                     if not in_list:
