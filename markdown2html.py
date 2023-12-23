@@ -14,6 +14,7 @@ Test comment
 Test comment
 """
 
+
 def main():
     """
     Test comment
@@ -38,6 +39,7 @@ def main():
         nf.write(html)
 
     exit(0)
+
 
 if __name__ == "__main__":
     """
