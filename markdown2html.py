@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""
+'''
 markdown2html.py - Convert Markdown to HTML
 
 This script takes a Markdown file as input and generates an HTML file as output
 
 Usage:
   ./markdown2html.py [input_file] [output_file]
-"""
+'''
 
 import sys
 import os.path
