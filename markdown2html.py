@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" This file is made to parse some Markdown to HTML """
+"""
+Test comment
+Test comment
+Test comment
+"""
 
 # Import necessary modules
 import sys  # Import the sys module for command line arguments
@@ -44,4 +48,9 @@ def main():
 
 # Run the main function if the script is executed directly
 if __name__ == "__main__":
+    """
+    Test comment
+    Test comment
+    Test comment
+    """
     main()
