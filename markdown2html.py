@@ -12,7 +12,7 @@ if __name__ == '__main__':
     def create_markdown():
         """ Function that checks if an error exists, if not print nothing."""
 
-        if len(sys.argv) < 2:
+        if len(sys.argv) < 3:
             error = "Usage: ./markdown2html.py README.md README.html"
             print(error, file=sys.stderr)
             exit(1)
