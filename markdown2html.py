@@ -15,10 +15,9 @@ import os.path
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-
 def create_markdown():
     """
-    fonction that check if an error exist if not print nothing
+    Function that checks if an error exists, if not print nothing.
     """
 
     if len(sys.argv) < 2:
@@ -32,7 +31,6 @@ def create_markdown():
 
     print()
     exit(0)
-
 
 if __name__ == "__main__":
     create_markdown()
