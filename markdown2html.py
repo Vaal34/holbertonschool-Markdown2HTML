@@ -5,6 +5,7 @@ import sys
 import os.path
 import markdown
 
+
 # Function to convert Markdown to HTML and save to a file
 def main():
     """ Function that checks if an error exists,
@@ -32,6 +33,7 @@ def main():
         nf.write(html)
 
     exit(0)
+
 
 # Run the main function if the script is executed directly
 if __name__ == "__main__":
