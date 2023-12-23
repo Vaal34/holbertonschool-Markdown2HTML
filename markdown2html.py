@@ -16,7 +16,7 @@ Comment
 """
 
 
-def create_markdown():
+def main():
     """
     Function that checks if an error exists,
     if not print nothing.
@@ -44,4 +44,4 @@ def create_markdown():
 
 
 if __name__ == '__main__':
-    create_markdown()
+    main()
