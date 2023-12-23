@@ -1,26 +1,15 @@
 #!/usr/bin/python3
-"""
-Test comment
-Test comment
-Test comment
-"""
+'''Write a script markdown2html.py that takes an argument 2 strings:
+   First argument is the name of the Markdown file.
+   Second argument is the output file name
+'''
 
 import sys
 import os.path
 import markdown
-"""
-Test comment
-Test comment
-Test comment
-"""
 
 
 def main():
-    """
-    Test comment
-    Test comment
-    Test comment
-    """
 
     if len(sys.argv) < 3:
         error = "Usage: ./markdown2html.py README.md README.html"
@@ -42,9 +31,4 @@ def main():
 
 
 if __name__ == "__main__":
-    """
-    Test comment
-    Test comment
-    Test comment
-    """
     main()
